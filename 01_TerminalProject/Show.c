@@ -97,6 +97,7 @@ int main(int argc, char** argv) {
             case 'h':
                 if (cur_col) cur_col--;
                 break;
+            case ' ':
             case KEY_DOWN:
             case 'j':
                 if (cur_str < lines_size - 1) cur_str++;

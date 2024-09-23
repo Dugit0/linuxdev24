@@ -4,7 +4,7 @@ CFLAGS = -fsanitize=address,undefined,signed-integer-overflow,pointer-compare,po
 all: Show
 
 Show: Show.c
-	$(CC) $(CFLAGS) -lncurses -o Show.out Show.c
+	$(CC) $(CFLAGS) -lncurses -o Show Show.c
 
 clean:
-	rm Show.out
+	rm Show
